@@ -1,12 +1,12 @@
 # GT911 DTS for RPi
 ## This is a Device Tree (DT) overlay for Goodix GT911 touch controllers connected to Raspberry Pi via I2C on GPIO pins. It was tested on Raspberry Pi 3 Model B
 
-To use it, download the .dts file below or create one yourself and store it somewhere where you can find it. 
+To use it, download the `.dts` file below or create one yourself and store it somewhere where you can find it. 
 From the same directory run the following command to compile it:
 ```sh
 sudo dtc -I dts -O dtb -o /boot/firmware/overlays/gt911.dtbo gt911_overlay.dts
 ```
-This will compile the 'gt911_overlay.dts' file into 'gt911.dtbo' and store it under _/boot/firmware/overlays_.
+This will compile the `gt911_overlay.dts` file into `gt911.dtbo` and store it under _/boot/firmware/overlays_.
 
 Next you need to enable it in the _/boot/firmware/config.txt_ file using the following:
 ```sh
